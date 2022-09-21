@@ -1,0 +1,63 @@
+{
+  "name": "StationMD PWA",
+  "short_name": "StationMD",
+  "description": "Sample PWA Description.",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "orientation": "any",
+  "display": "standalone",
+  "start_url": "new-index.html",
+  "scope": "",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/img/pwa/pwa.svg",
+      "sizes": "any",
+      "type": "image/svg"
+    },
+    {
+      "src": "/img/pwa/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/pwa/maskable_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/img/pwa/desc-1.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/img/pwa/desc-2.png",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/img/pwa/desc-3.png",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Sample PWA Shortcut #1",
+      "short_name": "Shortcut #1",
+      "description": "Sample PWA Shortcut Description #1.",
+      "url": "/sample-pwa-shortcut-1.html",
+      "icons": [{ "src": "/img/pwa/maskable_icon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Sample PWA Shortcut #2",
+      "short_name": "Shortcut #2",
+      "description": "Sample PWA Shortcut Description #2.",
+      "url": "/sample-pwa-shortcut-2.html",
+      "icons": [{ "src": "/img/pwa/maskable_icon.png", "sizes": "192x192" }]
+    }
+  ]
+}
