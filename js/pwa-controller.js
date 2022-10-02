@@ -21,7 +21,7 @@ window.samplePWA.functions.PWAController = function PWAController() {
 		<a href="#!" class="popup-close" title="Back"></a>
 		<div class="popup small-popup">
 		<a class="small-close" href="#!" title="Back"></a>
-		<h2 class="popup-header">StationMD PWA</h2>
+		<h2 class="popup-header">StationMD</h2>
 		<div class="popup-content">
 		<p id="pwa-message"></p>
 		<button class="btn" href="#pwa-popup" id="pwa-install">Try Now</button>
@@ -50,7 +50,7 @@ window.samplePWA.functions.PWAController = function PWAController() {
 				installBtn.remove();
 			}
 		} else {
-			installMsg.innerHTML = 'To install this PWA on to your desktop or laptop device, simply click on the <br><strong> Launch Now as a PWA Web App </strong> button below and then click <strong>Install</strong>.';
+			installMsg.innerHTML = 'To install this application on to your desktop or laptop device, simply click on the <br><strong> ADD TO HOME SCREEN </strong> button below and then click <strong>Install</strong>.</p>';
 		}
 		window.addEventListener('beforeinstallprompt', (e) => {
 			deferredPrompt = e;
@@ -58,16 +58,23 @@ window.samplePWA.functions.PWAController = function PWAController() {
 			installPopup.style.display = 'block';
 			installBtn.style.display = 'initial';
 		});
+		setTimeout(() => {
+			if (!deferredPrompt && !ios) {
+				console.log('navigator via setTimeout');
+				window.location.replace("https://staging.stationmd.com/zoom-token");
+			}
+		}, 500);
 		installBtn.addEventListener('click', async () => {
 			if (deferredPrompt !== null && deferredPrompt !== 'undefined') {
 				deferredPrompt.prompt();
 				const { outcome } = await deferredPrompt.userChoice;
 				if (outcome === 'accepted') {
+				console.log('navigator via deferredPrompt');
+					window.location.replace("https://staging.stationmd.com/zoom-token");
 					deferredPrompt = null;
 					installMsg.innerHTML = 'Thank you for installing our pwa.';
 					installIndicator.remove();
-					installBtn.remove();
-					window.location.replace("https://staging.stationmd.com/zoom-token");
+					installBtn.remove(); 
 				}
 			}
 		});

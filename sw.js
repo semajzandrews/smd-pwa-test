@@ -1,6 +1,6 @@
 var CACHE_SITE = 'smd-pwa-site-v.1.1.1.1';
 var urlsToCache = [
-'/new-index.html',
+'/index.html',
 '/offline.html',
 '/sample-pwa-shortcut-1.html',
 '/sample-pwa-shortcut-2.html',

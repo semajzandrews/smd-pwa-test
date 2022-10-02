@@ -1,13 +1,13 @@
 {
-  "name": "StationMD PWA",
+  "name": "StationMD",
   "short_name": "StationMD",
   "description": "Sample PWA Description.",
   "background_color": "#FFFFFF",
   "theme_color": "#FFFFFF",
   "orientation": "any",
   "display": "standalone",
-  "start_url": "new-index.html",
-  "scope": "",
+  "start_url": "welcome.html",
+  "scope": "/",
   "lang": "en-US",
   "icons": [
     {

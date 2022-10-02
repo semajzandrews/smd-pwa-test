@@ -84,7 +84,21 @@ button {
 	max-height: 200px;
 }
 .item .small-img {
-	max-height: 100px;
+	max-height: 65px;
+}
+.margin-r-5 {
+	margin-right: 5px;
+}
+.install-btn {
+	margin-top: 1.4rem;
+	width: 240px;
+	height: 65px;
+	border-radius: 6px;
+	border: none;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 600;
 }
 .install-btn:hover {
 	filter: opacity(0.8);
@@ -231,7 +245,3 @@ button {
 	height: auto;
 }
 
-#pwa-img-btn {
-    width: 5px;
-    height: 5px;
-}
