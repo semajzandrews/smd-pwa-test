@@ -245,3 +245,7 @@ button {
 	height: auto;
 }
 
+#pwa-img-btn {
+    width: 5px;
+    height: 5px;
+}
