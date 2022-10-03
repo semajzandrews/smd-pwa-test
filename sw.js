@@ -4,17 +4,17 @@ var urlsToCache = [
 '/offline.html',
 '/sample-pwa-shortcut-1.html',
 '/sample-pwa-shortcut-2.html',
-'/css/pwa.css',
-'/js/pwa-controller.js',
+'/smd-pwa-test/css/pwa.css',
+'/smd-pwa-test/js/pwa-controller.js',
 '/manifest.json',
-'/img/favicon/logo.svg',
-'/img/favicon/favicon.ico',
-'/img/pwa/pwa.svg',
-'/img/pwa/512.png',
-'/img/pwa/maskable_icon.png',
-'/img/pwa/desc-1.png',
-'/img/pwa/desc-2.png',
-'/img/pwa/desc-3.png'
+'/smd-pwa-test/img/favicon/logo.svg',
+'/smd-pwa-test/img/favicon/favicon.ico',
+'/smd-pwa-test/img/pwa/pwa.svg',
+'/smd-pwa-test/img/pwa/512.png',
+'/smd-pwa-test/img/pwa/maskable_icon.png',
+'/smd-pwa-test/img/pwa/desc-1.png',
+'/smd-pwa-test/img/pwa/desc-2.png',
+'/smd-pwa-test/img/pwa/desc-3.png'
 ];
 self.addEventListener('install', function(event) {
     self.skipWaiting();
